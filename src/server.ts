@@ -18,7 +18,7 @@ server.use(express.static(path.join(__dirname,'../public')))
 
 server.use(mainRoutes)
 
-server.use((req:Request,res:Response) =>{
+server.use((req:Request,res:Response) => {
     res.send('pages/404')
 })
 
